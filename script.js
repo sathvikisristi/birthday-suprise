@@ -1,7 +1,6 @@
 let screens = document.querySelectorAll(".screen");
 let current = 0;
 
-
 function sayYes() {
   const messages = [
   "Congratulations ❤️ You have successfully claimed an unlimited subscription of my love forever 💖",
@@ -83,6 +82,7 @@ function nextScreen() {
     }
   }
 }
+
 
 
 
