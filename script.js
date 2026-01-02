@@ -1,15 +1,14 @@
 let screens = document.querySelectorAll(".screen");
 let current = 0;
 
-function nextScreen() {
-  screens[current].classList.remove("active");
-  current++;
-  screens[current].classList.add("active");
-}
 
 function sayYes() {
   const messages = [
-    congratulations you have successfully claimed a unlimited subscription of my love forever and please dont mind me asking silly questions , i dont know why i ask them , but if i dont my head beaks , hence i ask them and you have to answer them with patience ];
+  "Congratulations ❤️ You have successfully claimed an unlimited subscription of my love forever 💖",
+  "Please don’t mind me asking silly questions 😅",
+  "I don’t know why I ask them, but if I don’t my head breaks 🤯",
+  "So please answer them patiently 🥺❤️"
+];
 
   document.body.innerHTML = `
     <div id="yesScreen" style="
@@ -74,11 +73,15 @@ const backgrounds = [
 ];
 
 function nextScreen() {
-  screens[current].classList.remove("active");
-  current++;
-  screens[current].classList.add("active");
+  if (current < screens.length - 1) {
+    screens[current].classList.remove("active");
+    current++;
+    screens[current].classList.add("active");
 
-  document.body.style.backgroundImage = `url(${backgrounds[current]})`;
+    if (backgrounds[current]) {
+      document.body.style.backgroundImage = `url(${backgrounds[current]})`;
+    }
+  }
 }
 
 
