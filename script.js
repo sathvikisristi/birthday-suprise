@@ -87,8 +87,14 @@ function nextScreen() {
 
 function playMusic() {
   const music = document.getElementById("bgMusic");
-  music.play();
-  document.getElementById("playMusic").style.display = "none";
+  music.play()
+    .then(() => {
+      document.getElementById("playMusic").style.display = "none"; // hide button
+    })
+    .catch(err => {
+      console.log("Music play blocked", err);
+    });
 }
+
 
 
