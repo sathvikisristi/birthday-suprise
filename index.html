@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <!-- Section 1 -->
+  <section class="screen active">
+    <h1>Happy Birthday sarath 🎂❤️</h1>
+    <p>I want you to be happy and enjoy your 19th year birthday, i whish i could be with you today. thankyou for many things such as treating me well and keeping me happy and understanding me in every situation and hearing me out ,cause no have ever done that to me thankyou . your so special for me as a bestfriend and as a boyfriend. reading this may look like cringe or funny but i dont really no how to express my self and i am not good at words so don't mind . you are very special to me in many ways and i have never met a personaly like you. you make me feel comfortable and thankyou for no judging me whatever i say . never lose this good humor of yours and till today i dont know why i am so obsessed with you , i always get so excited to talk to you and even ur messages are so special to me i dont know why but i have never felt this way and this is good and i enjoy this, just want to tell you that i am very happy to spend each and every moment with you , even in your sad days or happy days i dont care , i hope all are dreams may come true and i hope we can be togeather , HAPPY BIRTHDAY MY LOVE   .</p>
+    <button onclick="nextScreen()">Next ➝</button>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="screen">
+  <h2>Some Memories 💫</h2>
+
+  <div class="gallery">
+    <div class="photo" onclick="showPhotoMessage('remember 1st badmition practice together semma dayy laa')">
+      <img src="images/pic1.jpg">
+    </div>
+
+    <div class="photo" onclick="showPhotoMessage('en ticket tholanjichu , mazhai vera irundhuchu ana nee en ticket thedana , adhu enaku rombha special ah feel achu adhuku ticket ponadhu kastam illa mu solla maten , still enaku rombha pudichichu ')">
+      <img src="images/pic2.jpg">
+    </div>
+
+    <div class="photo" onclick="showPhotoMessage('the scean which led us to many comtrovery , ana paravala pathukalam . i really enjoyed it !!')">
+      <img src="images/pic3.jpg">
+    </div>
+
+    <div class="photo" onclick="showPhotoMessage('idhu rombha rombha cute ahh iruku ')">
+      <img src="images/pic4.jpg">
+    </div>
+
+    <div class="photo" onclick="showPhotoMessage('nee epdi irundhalum , evlo silly ah irundhalum nalla iruka , ana idhu rombha nalla iruku , neraya anupu ok va idhu mari ')">
+      <img src="images/pic5.jpg">
+    </div>
+  </div>
+
+  <p id="photoMessage"></p>
+  <button onclick="nextScreen()">Next ➝</button>
+</section>
+
+  <!-- Section 3 -->
+  <section class="screen">
+    <p class="letter">
+      at first i thought you sa my friend but then you became my bestfriend and then i realised i had a crush on you but i dont want to ruin our friendship , but still i was not able to control myself sorry . with you i had some of the best memories ,such as with you i tried my 1st waffle , with you i attended my 1st concert (which is my favourite), with you i had my 1st class bunk etc and at 1st when we used call(phone) as friends , we talked for more than a hr and half , i dont know you remember it or not , but i really enjoyed it a lot and i even marked it in my note but then i thought its creepy and deleted it , but later this December after expressing my feeling , i sitill mark our long calls (cause its not creepy now cause ur my bf), i dont know but i enjoy each and every detail about you , but sometimes you do make me mad but later i forget why i am even mad at you , heyy sarath i wish we can spend many birthdays together , lets be together in every happiness and sorrow , lets face everything together ok? and i really wish you very very happy 19th birthday!!!!! </p>
+    <button onclick="nextScreen()">Next ➝</button>
+  </section>
+
+  <!-- Proposal -->
+  <section class="screen">
+    <h2>Will you be mine forever? ❤️</h2>
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">Yes 💖</button>
+      <button class="no" onclick="sayNo()">No 💔</button>
+    </div>
+    <p id="noText"></p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
