@@ -85,4 +85,10 @@ function nextScreen() {
 
 
 
+function playMusic() {
+  const music = document.getElementById("bgMusic");
+  music.play();
+  document.getElementById("playMusic").style.display = "none";
+}
+
 
