@@ -67,7 +67,7 @@ function showPhotoMessage(message) {
 }
 
 const backgrounds = [
-  "images/bg1.jpg",
+  "images/bg1.png",
   "images/bg2.jpg",
   "images/bg3.jpg",
   "images/bg4.jpg"
@@ -80,4 +80,5 @@ function nextScreen() {
 
   document.body.style.backgroundImage = `url(${backgrounds[current]})`;
 }
+
 
